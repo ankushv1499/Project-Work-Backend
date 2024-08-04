@@ -1,0 +1,35 @@
+package com.app;
+
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class LectureMedia {
+	
+	private String publicId;
+	private String sercureUrl;
+	public LectureMedia() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public LectureMedia(String publicId, String sercureUrl) {
+		super();
+		this.publicId = publicId;
+		this.sercureUrl = sercureUrl;
+	}
+	public String getPublicId() {
+		return publicId;
+	}
+	public void setPublicId(String publicId) {
+		this.publicId = publicId;
+	}
+	public String getSercureUrl() {
+		return sercureUrl;
+	}
+	public void setSercureUrl(String sercureUrl) {
+		this.sercureUrl = sercureUrl;
+	}
+	
+	
+	
+
+}

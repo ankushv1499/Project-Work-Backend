@@ -1,0 +1,63 @@
+package com.app;
+
+import javax.persistence.Embeddable;
+import javax.persistence.Embedded;
+@Embeddable
+public class Lecture {
+	private String title;
+	private String description;
+	
+	
+	@Embedded
+	private LectureMedia lecture;
+
+
+	public Lecture() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Lecture(String title, String description, LectureMedia lecture) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.lecture = lecture;
+	}
+
+
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public String getDescription() {
+		return description;
+	}
+
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+
+	public LectureMedia getLecture() {
+		return lecture;
+	}
+
+
+	public void setLecture(LectureMedia lecture) {
+		this.lecture = lecture;
+	}
+	
+	
+	
+	
+	
+
+}

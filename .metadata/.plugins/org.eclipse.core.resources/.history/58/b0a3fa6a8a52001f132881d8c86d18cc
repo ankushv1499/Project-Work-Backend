@@ -1,0 +1,20 @@
+package com.app.cloud;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
+
+@Configuration
+public class CloudinaryConfig {
+
+    @Bean
+    public Cloudinary cloudinary() {
+        return new Cloudinary(ObjectUtils.asMap(
+            "cloud_name", "LMS",
+            "api_key", "799599243955591",
+            "api_secret", "zTU0QrcmhiHvtQ1DbMgeCN_dyEk"
+        ));
+    }
+}
